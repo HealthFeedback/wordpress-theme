@@ -19,10 +19,10 @@
               >
           </div>
           <div class="col-sm-4 p1">
-            <div class="fact-check-card-title mb2 claimshort">
+            <div class="fact-check-card-title mb2">
               CLAIM
             </div>
-            <div>
+            <div class="claimshort">
               "<?php echo get_post_meta( get_the_ID(), 'claimshort', true) ?>"
             </div>
           </div>
