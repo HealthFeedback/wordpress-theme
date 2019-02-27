@@ -19,7 +19,7 @@
               >
           </div>
           <div class="col-sm-4 p1">
-            <div class="fact-check-card-title mb2">
+            <div class="fact-check-card-title mb2 claimshort">
               CLAIM
             </div>
             <div>
