@@ -120,11 +120,13 @@ Health Feedback is a worldwide network of scientists sorting fact from fiction i
 </style>
     <section class="mc_embed_bar">
     <div class="container" id="mc_embed_signup" style="background-color: #F5F5F5;overflow-y:hidden;">
-            <form action="https://climatefeedback.us9.list-manage.com/subscribe/post?u=e33d7323df2327db90438153a&amp;id=079e302eed" method="post" 
-                  id="mc-embedded-subscribe-form" 
-                  name="mc-embedded-subscribe-form" 
-                  class="validate overflow-hidden" 
-                  target="_blank" style="padding:5px;" novalidate>
+        <form action="//climatefeedback.us9.list-manage.com/subscribe/post?u=e33d7323df2327db90438153a&amp;id=e4773425e1"
+    method="post" id="mc-embedded-subscribe-form"
+    name="mc-embedded-subscribe-form"
+    class="validate overflow-hidden"
+    target="_blank"
+    style="padding:5px;"
+  novalidate>
     <div class="row">
       <div class="col-sm-12 call-to-action">
         <div class="media-left">
@@ -192,9 +194,13 @@ Health Feedback is a worldwide network of scientists sorting fact from fiction i
 <div class="feeds-container feeds-container__claim ">
     <div class="feeds-title h3">Latest Claim Reviews</div>
   <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-    <a href="<?php echo get_permalink( get_the_ID() ); ?>" >
       <div class="feed feed__claim col col-lg-6 mb1">
         <div class="feed__claim__container relative">
+            <div class='feed-title h3'>
+                <a href="<?php echo get_permalink( get_the_ID() ); ?>" >
+                  <?php echo get_the_title(); ?>
+                </a>
+            </div>
           <div class="feed__claim__container__illustration col col-4">
             <div class="feed__claim__container__illustration__screenshot">
               <img
@@ -204,20 +210,19 @@ Health Feedback is a worldwide network of scientists sorting fact from fiction i
             </div>
           </div>
           <div class="feed__claim__container__content col col-8">
-            <img
-              class="feed__claim__container__content__verdict__img mb1"
-              src="<?php echo get_site_url(); ?>/wp-content/uploads/tags/HTag_<?php echo get_post_meta( get_the_ID(), 'verdict', true)?>.png"
-            >
             <div class="feed-excerpt feed__claim__container__content__text mb1">
               "<?php echo get_post_meta( get_the_ID(), 'claimshort', true); ?>"
             </div>
+              <img
+              class="feed__claim__container__content__verdict__img mb1"
+              src="<?php echo get_site_url(); ?>/wp-content/uploads/tags/HTag_<?php echo get_post_meta( get_the_ID(), 'verdict', true)?>.png"
+            >
             <div class="feed__claim__container__content__outlet">
               <?php echo get_post_meta( get_the_ID(), 'author', true); ?>, <?php echo get_post_meta( get_the_ID(), 'outlet', true); ?>
             </div>
           </div>
         </div>
       </div>
-    </a>
   <?php endwhile; ?>
 </div>
 <div class="feeds-more mb1 p1">
