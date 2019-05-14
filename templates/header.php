@@ -20,6 +20,19 @@
       
             <ul id="menu-main" class="nav navbar-nav">
                
+                <li class="menu-item  menu-item-object-page "> 
+                    <a href="<?php echo get_site_url(); ?>/feedbacks/">Article Reviews</a>
+                </li>
+                <li class="menu-item  menu-item-object-page "> 
+                    <a href="<?php echo get_site_url(); ?>/claim-reviews/">Claim Reviews</a>
+                </li>
+                <li class="menu-item  menu-item-object-page "> 
+                    <a href="<?php echo get_site_url(); ?>/insights/">Insights</a>
+                </li>
+                <li class="menu-item  menu-item-object-page  mmenu">  
+                    <a href="https://sciencefeedback.co/donate/">Support us</a>
+                </li>
+                <!--  
                 <div class="ddropdown">
                     <li class="menu-item  menu-item-object-page  menu-item-has-children">  
                         <button class="dropbtn"><a href="<?php echo get_site_url(); ?>/feedbacks/"><b class="caret"></b> Scientific Feedbacks</a></button>
@@ -34,10 +47,7 @@
                 <li class="menu-item  menu-item-object-page "> 
                     <a href="<?php echo get_site_url(); ?>/community/">Community</a>
                 </li>
-                <!-- 
-                <li class="menu-item  menu-item-object-page  ">
-                    <a href="<?php echo get_site_url(); ?>/news-events">News &amp; Events</a>
-                </li>   
+                  
                 -->
             </ul>
         
