@@ -220,6 +220,9 @@ Health Feedback is a worldwide network of scientists sorting fact from fiction i
             <div class="feed__claim__container__content__outlet">
               <?php echo get_post_meta( get_the_ID(), 'author', true); ?>, <?php echo get_post_meta( get_the_ID(), 'outlet', true); ?>
             </div>
+            <div>
+                - <?php echo get_the_date( 'd M Y' ); ?>
+            </div>
           </div>
         </div>
       </div>
